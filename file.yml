@@ -4,5 +4,5 @@
   task:
   - name: writing my first task
     debug:
-      msg:"{ my first playbook}"
+      msg: "{ my first playbook}"
 ...
