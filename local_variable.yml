@@ -1,0 +1,9 @@
+---
+- name: my first playbook
+  host: all
+  vars:
+    url: "hello krishnamuarai yadav"
+  task:
+   - name: my fist palybook with local variable
+     debug:
+      msg:"{{url}}"
