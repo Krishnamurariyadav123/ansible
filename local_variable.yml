@@ -1,10 +1,8 @@
 ---
-  - name: my first playbook
-    host: all
-    vars:
-      url: "hello krishnamuarai yadav"
-    tasks:
-      - name: my fist palybook with local variable
-        debug:
-          msg:"{{url}}"
-...
+- name: first playbook
+  hosts: all
+  vars_file: var.yml
+  task:
+    - name: task one provide
+      debug:
+        msg: "{{URL}}"
