@@ -1,8 +1,0 @@
----
-- name: playebook-1
-  host: all
-  task:
-    - name: writing my first task
-      debug:
-        msg: "{ my first playbook}"
-...

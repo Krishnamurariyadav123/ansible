@@ -1,9 +1,0 @@
----
-  - name: first playbook
-    hosts: all
-    vars_file: var.yml
-    task:
-      - name: task one provide
-        debug:
-          msg: "{{URL}}"
-...
