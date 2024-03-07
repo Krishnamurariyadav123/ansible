@@ -1,0 +1,11 @@
+---
+
+- name: the variabl palybook
+  hosts: all
+  vars:
+    URL: www.Devops.com
+  tasks:
+    - name: task provide by URL
+      debug:
+        msg: "{{URL}}"
+...
