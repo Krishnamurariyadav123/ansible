@@ -1,5 +1,4 @@
 ---
-
 - name: the variabl palybook
   hosts: all
   vars:
