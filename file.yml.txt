@@ -1,0 +1,8 @@
+---
+- name: the first palybook
+  hosts: all
+  tasks:
+    - name: the palybook
+      debug:
+        msg:  "hello everyone"
+...
