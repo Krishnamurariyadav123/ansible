@@ -1,0 +1,15 @@
+---
+- name: the second global variable
+  hosts: all
+  vars:
+    URL: facebook.com
+  tasks:
+    - name: the second global playbook
+      debug:
+        msg: "{{URL}}"
+  vars_files: yadav.yml
+  tasks:
+    - name: the IP
+      debug:
+        msg: "{{URL}}"
+...
