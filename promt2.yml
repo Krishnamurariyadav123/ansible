@@ -1,0 +1,13 @@
+---
+- name: playbook from prompt
+  hosts: all
+  vars_prompt:
+    - name: URL
+      prompt: "enter the value"
+    - name: URL1
+      prompt: "enter the second value"
+  tasks:
+    - name: example prompt
+      debug:
+        msg: "{{URL}}"
+...
