@@ -1,0 +1,9 @@
+---
+- name: the global variable playbook
+  hosts: all
+  vars:
+    URL: flipkart.com
+  tasks:
+    - name: the global variable
+      debug:
+        msg: "{{URL}}"
