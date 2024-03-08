@@ -4,7 +4,7 @@
   tasks:
     - name: the second local playbook
       debug:
-        msg: "{{URl}}"
+        msg: "{{URL}}"
   vars:
     URL: amazon.com
 ...
