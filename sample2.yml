@@ -1,0 +1,11 @@
+---
+- name: the sample 2 book 
+  hosts: 172.31.11.90 , 172.31.12.21
+  tasks:
+    - name:  the sample 2 playbook
+      debug:
+        msg: "hello sample 2"
+    - name: the sample 2 IP Address
+      debug:
+        msg: "the sample2  ip"
+...

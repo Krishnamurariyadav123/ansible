@@ -1,0 +1,9 @@
+---
+- name: the variable playbook
+  hosts: all
+  vars_files: murari.yml
+  tasks:
+    - name: the first variable book
+      debug:
+        msg: "{{URL}}"
+...

@@ -1,0 +1,8 @@
+---
+- name: The sample 1 book 
+  hosts: all
+  tasks:
+    - name: the sample 1 playbook
+      debug:
+        msg: "Hello sample 1"
+...

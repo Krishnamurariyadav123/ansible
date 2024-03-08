@@ -1,0 +1,12 @@
+---
+- name: the second variable playbook
+  hosts: all
+  vars_files: yadav.yml
+  tasks:
+    - name: the second variable book
+      debug:
+        msg: "{{URL}}"
+    - name: the Second variable IP Address
+      debug:
+        msg: "{{name}}"
+...
