@@ -1,0 +1,10 @@
+---
+- name: the second local variable
+  hosts: all
+  tasks:
+    - name: the second local playbook
+      debug:
+        msg: "{{URl}}"
+  vars:
+    URL: amazon.com
+...
