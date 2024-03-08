@@ -1,0 +1,9 @@
+---
+- name: the cli playbook
+  hosts: all
+  vars_files: murari.yml
+  tasks:
+    - name: the cli playbook variable
+      debug:
+        msg: "{{URL}}"
+...
