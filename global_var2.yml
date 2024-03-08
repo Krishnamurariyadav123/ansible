@@ -7,9 +7,9 @@
     - name: the second global playbook
       debug:
         msg: "{{URL}}"
-  vars_files: yadav.yml
-  tasks:
-    - name: the IP
-      debug:
-        msg: "{{URL}}"
+    vars_files: yadav.yml
+  
+      - name: the IP
+        debug:
+          msg: "{{URL}}"
 ...
