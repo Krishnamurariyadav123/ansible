@@ -3,13 +3,12 @@
   hosts: all
   vars:
     URL: facebook.com
+    URL1: flipkart.com
   tasks:
     - name: the second global playbook
       debug:
         msg: "{{URL}}"
-    vars_files: yadav.yml
-  
-      - name: the IP
-        debug:
-          msg: "{{URL}}"
+    - name: the IP
+      debug:
+        msg: "{{URL1}}"
 ...
