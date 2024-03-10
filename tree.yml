@@ -2,8 +2,8 @@
 - name: Intall tree playbook
   hosts: all
   become: yes
-    vars: 
-      package: tree
+  vars: 
+    package: tree
   tasks:
     - name: Install tree package
       action: apt   name={{"package"}}  state: latest
