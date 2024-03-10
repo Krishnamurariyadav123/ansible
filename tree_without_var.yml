@@ -1,0 +1,9 @@
+---
+- name: install tree package without variable
+  hosts: all
+  tasks:
+    - name: installl tree package
+      package:
+        name: tree
+        state: present
+...
