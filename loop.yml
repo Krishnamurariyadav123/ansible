@@ -1,0 +1,11 @@
+---
+- name: Install the loop playbook
+  hosts: all
+  tasks:
+    - name: loop playbook
+      user: name="{{}}" state = present
+      with_items:
+        - murari
+        - niraj
+        - suraj
+...
