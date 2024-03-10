@@ -1,6 +1,7 @@
 ---
 - name: Install the loop playbook
   hosts: all
+  become: yes
   tasks:
     - name: loop playbook
       user: name="{{}}" state = present
