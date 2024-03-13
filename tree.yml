@@ -8,5 +8,5 @@
     - name: Install tree package
       apt:
         name: "{{ package }}"
-        state: latest
+        state: absent
 ...

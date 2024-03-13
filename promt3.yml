@@ -1,0 +1,11 @@
+---
+- name: cli playbook
+  hosts: all
+  vars_prompt:
+    - name: cli
+      prompt: "enter the value"
+  tasks:
+    - name: cli playbook
+      debug:
+        msg: "{{cli}}"
+...

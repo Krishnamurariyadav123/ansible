@@ -4,7 +4,7 @@
   become: yes
   tasks:
     - name: Install httpd
-      package:
-        name: httpd
+      package: 
+        name: nginx
         state: present
 ...

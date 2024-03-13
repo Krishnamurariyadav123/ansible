@@ -10,4 +10,7 @@
     - name: example prompt
       debug:
         msg: "{{URL}}"
+    - name: IP address
+      debug:
+        msg: "{{URL1}}"
 ...

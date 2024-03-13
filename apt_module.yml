@@ -1,0 +1,12 @@
+---
+- name: apt module playbook
+  hosts: all
+  become: yes
+  tasks:
+    - name: apt module
+      apt:
+        name: nginx
+        state: latest
+... 
+
+    

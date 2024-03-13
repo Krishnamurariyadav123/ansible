@@ -1,12 +1,16 @@
 ---
-- name: Install the loop playbook
+- name: Create users based on fruit names
   hosts: all
   become: yes
+  vars:
+    fruits:
+      - apple
+      - banana
+      - orange
   tasks:
-    - name: loop playbook
-      user: name="{{}}" state = present
-      with_items:
-        - murari
-        - niraj
-        - suraj
-...
+    - name: Create users
+      user:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ fruits }}"
+

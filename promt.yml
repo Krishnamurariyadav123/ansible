@@ -1,0 +1,10 @@
+---
+- name: new file for prompt
+  hosts: all
+  tasks:
+  - name: example task
+    debug:
+      msg: "{{URL}}"
+  vars_prompt:
+    - name: URL
+      prompt: "Enter your URL Not needed"

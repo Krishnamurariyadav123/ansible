@@ -4,6 +4,6 @@
   tasks:
     - name: installl tree package
       package:
-        name: tree
+        name: httpd
         state: present
 ...

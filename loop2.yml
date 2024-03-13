@@ -1,0 +1,15 @@
+---
+- name: Example playbook with loop kind of work
+  hosts: all
+  become: yes
+  tasks:
+    - name: Add list of users in my nodes
+      user: 
+        name:  "{{ item }}"
+        state:  present
+      with_items:
+        - jarvis
+        - spider
+        - peter
+        - banner
+...

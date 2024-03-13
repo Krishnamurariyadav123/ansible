@@ -1,0 +1,8 @@
+---
+- name: the host playbook
+  hosts: all
+  tasks:
+    - name: the host example
+      debug:
+        msg: "{{URL}}"
+...
