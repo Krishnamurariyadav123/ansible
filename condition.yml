@@ -1,0 +1,12 @@
+---
+- name: Condition loop playbook
+  hosts: all
+  become: yes
+  tasks:
+    - name: install httpd on redhat
+      command: yum install httpd -y
+      when: ansible_os_family == "RedHat"
+    - name: install nginx on debian
+      command: apt install nginx -y
+      when: ansible_os_family == "Debian"
+...
